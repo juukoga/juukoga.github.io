@@ -20,8 +20,6 @@ html{
 }
 
 
-
-
 #nav-bar{
 	position: sticky;
 	top: 0;
@@ -430,6 +428,13 @@ strong{
 #console{
   width: 10%;
   height: 10%;
+}
+
+@media screen and (max-width:900px){
+  #maquina, #bilhar , #console{
+    width: 50%;
+    height: 50%;
+  }
 }
 
 p.tit-maq, .tit-cons, .tit-sin{
