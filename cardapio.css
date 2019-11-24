@@ -278,7 +278,7 @@ div.card-header{
 	color: #e60026;
 }
 
-.fa-snowflake{
+i.fa-snowflake{
 	color: #217ff1;
 }
 
@@ -369,7 +369,7 @@ footer a:hover {
     color: #ff0044 !important;  
 }
 
-.social .fab:hover{
+footer.social,.fab:hover{
 	color: #ff0044 !important; 
 }
 .logo-part {
