@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Cardápio</title>
+	<link rel="stylesheet" type="text/css" href="cardapio.css">
+	<script src="https://kit.fontawesome.com/6ee59fbefb.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+ <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content= "transparent">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+
+  <!-- *MENU BAR* !--> 
+<body>
+
+<section id="nav-bar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+  <a class="navbar-brand mb-0" href=index.html> <img src="TUTORIA2/logo-colorido-reto.svg" alt="logo OOPS cafeteria & game lounge"> </a>
+</div>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon" ></span> <!-- BARRA QUE APARECE NO MOBILE !-->
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto"> <!-- MARGIN LEFT !-->
+       <li class="nav-item">
+        <a class="nav-link" href=cardapio.html>CARDÁPIO</a>
+      </li>
+         <li class="nav-item ">
+        <a class="nav-link" href="#popup1">RESERVAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="faleconosco.html">FALE CONOSCO</a>
+      </li>
+    </ul>
+      
+</div>
+
+</nav>
+
+</section>
+
+<div class="tudo">
+<!-- CAROUSEL !-->
+<section class="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+  <div class="carousel-inner">
+  	<div class="carousel-caption">
+    <h1 class="animated fadeInDown slow">CARDÁPIO</h1>
+	</div>
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="comida3.png" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="comida1.png" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="comida2.png" alt="Terceiro Slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+</section>
+<!-- CARDÁPIO !-->
+
+<section id="cardapio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2 class="animated fadeInLeft slow text-titulo">Aqui temos <br> opções para <br>todos os gostos! </h2>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingTwo1">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+        aria-expanded="false" aria-controls="collapseTwo1">
+        <h5 class="tit-comidas">
+          Comidas <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+      data-parent="#accordionEx1">
+      <div class="card-body">
+       	<div class="container">
+       	<div class="row">
+       	<div class="col-md-8">
+        <h3 class="body-tit-com">Aqui está nosso delicioso cardápio de comidas</h3>
+        <p class="body-tex-com">Salgados,doces,vegetariano,porções,unidades,temos para todos os gostos :)</p>
+        </div>
+        <div class="col-md-4" id="legenda">
+        <i class="fas fa-leaf fa-lg"> opção vegetariana</i>
+        <br>
+        <i class="fas fa-tint fa-lg"> contém lactose </i>
+        <br>
+        <i class="fab fa-pagelines fa-lg"> glúten free</i>
+        </div>
+    	</div>
+    	</div>
+
+
+
+
+
+
+<!-- BROWNIE - LINHA 1 !-->
+
+        <div class="container">
+        	<div class="row linha">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="brownie.png" alt="brownie"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Nossos brownies de chocolate são molhadinhos e fofinhos (perfeitos acompanhados de um expresso). </p>
+        			<h1 class="preço">R$4</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fas fa-tint"></i>
+        		</div>
+
+
+<!-- CROISSANT !-->       
+        <div class="col-md-2" id="croissant">
+        		<img class="img-fluid" src="croissant.png" alt="croissant"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3" id="texto-croi"> <!-- conteúdo !-->
+        			<p class="texto"> Croissants crocantes por fora e macios por dentro!
+        			<br> <strong> Sabores: </strong> queijo <i class="fas fa-leaf"></i>, chocolate <i class="fas fa-leaf"></i>, presunto e queijo. </p>
+        			<h1 class="preço">R$6</h1>
+        			<i class="fas fa-tint"></i>
+        		</div>
+        
+        	</div> <!-- row 1 fecha aqui !-->
+
+        </div> <!-- container fecha aqui !-->
+        
+        	
+<!-- EMPADA - LINHA 2 !-->       
+        	<div class="container">
+        	<div class="row linha">
+        <div class="col-md-2" id="empada">
+        		<img class="img-fluid" src="empada.png" alt="empada"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Empadinhas de frango com catupiry e azeitonas que desmancham na boca. </p>
+        			<h1 class="preço">R$6</h1>
+        			<i class="fas fa-tint"></i>
+        		</div>
+
+<!-- PANQUECAS !-->
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="panquecas.png" alt="panquecas"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Levinhas e fofinhas, nossas panquecas com massa de banana são acompanhadas de um caldo de mel e frutas fresquinhas. </p>
+        			<p class="legendinha"> <strong> (lactose e glúten free) </strong></p>
+        			<h1 class="preço">R$12</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fab fa-pagelines "> </i>
+        		</div>
+        
+
+      </div> <!-- row 2 fecha aqui !-->
+
+      </div> <!-- container fecha aqui !-->
+    
+
+<!-- TORRADA - LINHA 3 !-->       
+        	<div class="container">
+        	<div class="row linha">
+        <div class="col-md-2" id="torrada">
+        		<img class="img-fluid" src="torrada.png" alt="torrada"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Uma fatia de pão de forma tostadinha acompanhada de um ovo, preparado ao seu gosto e abacates fresquinhos, com a melhor escolha de temperos. </p>
+        			<h1 class="preço">R$5</h1>
+        			<i class="fas fa-leaf"></i>
+        		</div>
+
+<!-- COOKIES !-->
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="cookies.png" alt="cookies"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Macios e deliciosos, esses são os clássicos cookies com massa de baunilha e gotas de chocolate. </p>
+        			<h1 class="preço">R$5</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fas fa-tint"></i>
+        		</div>
+        
+
+      </div> <!-- row 2 fecha aqui !-->
+
+      </div> <!-- container fecha aqui !-->
+
+
+
+<!-- DONUTS - LINHA 4 !-->       
+        	<div class="container">
+        	<div class="row linha">
+        <div class="col-md-2" id="donuts">
+        		<img class="img-fluid" src="donuts2.png" alt="donuts"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Uma fatia de pão de forma tostadinha acompanhada de um ovo, preparado ao seu gosto e abacates fresquinhos, com a melhor escolha de temperos. </p>
+        			<h1 class="preço">R$8</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fab fa-pagelines "> </i>
+        		</div>
+
+<!-- PÃO DE QUEIJO !-->
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="pao-queijo.png" alt="pão de queijo"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Macios e deliciosos, esses são os clássicos cookies com massa de baunilha e gotas de chocolate. </p>
+        			<h1 class="preço">R$4</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fas fa-tint"></i>
+        		</div>
+        
+
+      </div> <!-- row 2 fecha aqui !-->
+
+      </div> <!-- container fecha aqui !-->
+
+
+    </div> <!-- card-body !-->
+
+  </div>
+
+  <!-- Accordion card -->
+
+  
+
+  
+
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingTwo2">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+        aria-expanded="false" aria-controls="collapseTwo21">
+        <h5 class="tit-bebidas">
+         Bebidas <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo21" class="collapse" role="tabpanel" data-parent="#accordionEx1">
+      <div class="card-body">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-md-8">
+      				
+        <h3 class="body-tit-beb">Bebidas maravilhosas para aproveitar enquanto curte com a galera!</h3>
+        <p class="body-tex-beb">Desde um café quentinho, um docinho milkshake ou um refrescante chá gelado, você decide! :)</p>
+      			</div> <!-- fecha a col !-->
+      	
+      	<div class="col-md-4">
+        <i class="fas fa-fire fa-lg"> bebidas quentes</i>
+        <br>
+        <i class="far fa-snowflake fa-lg"> bebidas frias</i>
+        <br>
+        <i class="fas fa-tint fa-lg"> contém lactose </i>
+    	</div>
+      	</div>
+    	
+      	<!-- COLD BREW - LINHA 1 !-->
+       <div class="container">
+        	<div class="row linha" id="cold-brew">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="cold-brew.png" alt="cold-brew"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Café preparado por infusão, geladinho e perfeito para dar um up!<br> <strong> Adicionais <i class="fas fa-tint"></i> (+R$1,50): </strong> leite / leite de amêndoas / leite de coco </p>
+        			<h1 class="preço">R$9</h1>
+        			<i class="far fa-snowflake"> </i>
+        		</div>
+
+    	
+<!-- CHÁ GELADO !-->       
+        <div class="col-md-2" id="cha-gelado">
+        		<img class="img-fluid" src="cha-gelado.png" alt="chá gelado"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Chá gelado para você se refrescar com uma explosão de sabores únicos! <br> <strong>Sabores:</strong> pêssego, chá verde, limão ou frutas vermelhas </p>
+        			<h1 class="preço">R$6</h1>
+        			<i class="far fa-snowflake"> </i>
+        		</div>
+        
+        		</div> <!-- row fecha aqui !-->
+        		</div> <!-- container fecha aqui !-->
+     
+
+      	<!-- MILKSHAKE - LINHA 2 !-->
+       <div class="container">
+        	<div class="row linha" id="milkshake">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="milkshake.png" alt="milkshake"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Um mistura deliciosa de sorvete de baunilha batido com calda de chocolate e pedacinhos de cookies </p>
+        			<h1 class="preço">R$12</h1>
+        			<i class="far fa-snowflake"> </i>
+        			<i class="fas fa-tint"></i>
+        		</div>
+
+    	
+<!-- CHOCOLATE QUENTE !-->       
+        <div class="col-md-2" id="chocolate-quente">
+        		<img class="img-fluid" src="chocolate-quente.png" alt="chocolate quente"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Com calda de chocolate, um leite cremoso e finalizado com uma camada de chantilly, nosso chocolate quente é uma ótima opção para os dias frios! </p>
+        			<h1 class="preço">R$8</h1>
+        			<i class="fas fa-fire"> </i>
+        			<i class="fas fa-tint"> </i>
+        		</div>
+        
+        		</div> <!-- row fecha aqui !-->
+        		</div> <!-- container fecha aqui !-->
+
+<!-- EXPRESSO - LINHA 3 !-->
+       <div class="container">
+        	<div class="row linha" id="expresso">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="expresso.png" alt="expresso"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Café preparado por infusão, geladinho e perfeito para dar um up!<br> <strong> Adicionais <i class="fas fa-tint"></i> (+R$1,50): </strong> leite / leite de amêndoas / leite de coco </p>
+        			<h1 class="preço">R$9</h1>
+        			<i class="fas fa-fire"> </i>
+        		</div>
+
+    	
+<!-- CARAMELO MACCHIATO !-->       
+        <div class="col-md-2" id="macchiato">
+        		<img class="img-fluid" src="macchiato.png" alt="caramelo macchiato"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Chá gelado para você se refrescar com uma explosão de sabores únicos! <br> <strong>Sabores:</strong> pêssego, chá verde, limão ou frutas vermelhas </p>
+        			<h1 class="preço">R$11</h1>
+        			<i class="far fa-snowflake"> </i>
+        		</div>
+        
+        		</div> <!-- row fecha aqui !-->
+        		</div> <!-- container fecha aqui !-->
+
+<!-- CHAI LATTE - LINHA 4 !-->
+       <div class="container">
+        	<div class="row linha" id="chai-latte">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="chai-latte.png" alt="chai latte"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Café preparado por infusão, geladinho e perfeito para dar um up!<br> <strong> Adicionais <i class="fas fa-tint"></i> (+R$1,50): </strong> leite / leite de amêndoas / leite de coco </p>
+        			<h1 class="preço">R$10</h1>
+        			<i class="far fa-fire"> </i>
+        		</div>
+
+    	
+<!-- CHÁ GELADO !-->       
+        <div class="col-md-2" id=".">
+        		<img class="img-fluid" src="cha-gelado.png" alt="chá gelado"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Chá gelado para você se refrescar com uma explosão de sabores únicos! <br> <strong>Sabores:</strong> pêssego, chá verde, limão ou frutas vermelhas </p>
+        			<h1 class="preço">R$6</h1>
+        			<i class="far fa-snowflake"> </i>
+        		</div>
+        
+        		</div> <!-- row fecha aqui !-->
+        		</div> <!-- container fecha aqui !-->
+
+
+    	</div>
+      	</div>
+      	</div>
+
+  </div>
+  <!-- Accordion card -->
+
+  
+
+
+  <!-- Accordion card -->
+  <div class="card">
+
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingThree31">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
+        aria-expanded="false" aria-controls="collapseThree31">
+        <h5 class="tit-combos">
+          Combos <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+      data-parent="#accordionEx1">
+      <div class="card-body">
+        <h3 class="body-tit-cb">Combos no precinho!</h3>
+        <p class="body-tex-cb">Aqui na OOPS você também aproveita as nossas delícias por um precinho amigo!</p>
+  
+<!-- BROWNIE - LINHA 1 !-->
+
+        <div class="container">
+        	<div class="row" id="linha2">
+        	<div class="col-md-2">
+        		<img class="img-fluid" src="brownie.png" alt="brownie"> <!-- imagem !-->
+        	</div>
+        		<div class="col-md-3"> <!-- conteúdo !-->
+        			<p class="texto"> Nossos brownies de chocolate são molhadinhos e fofinhos (perfeitos acompanhados de um expresso) </p>
+        			<h1 class="preço">R$4</h1>
+        			<i class="fas fa-leaf"></i>
+        			<i class="fas fa-tint"></i>
+        		</div>
+
+
+
+
+      </div> 
+  </div>
+
+  </div>
+  <!-- Accordion card -->
+
+</div>
+<!-- Accordion wrapper -->
+</div>
+
+</div>
+
+</div>
+
+</div>
+<!-- FOOTER !-->
+
+<footer class="container-fluid">
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="logo-tipografia.png" class="logo-footer" alt="OOPS cafeteria & game lounge" >
+                  <p><i class="fas fa-map-marker-alt"></i> Rua Doutor Luiz Migliano, 923</p>
+                  <p><i class="far fa-envelope"></i> contato@oops.com.br</p>
+                  <p><i class="fas fa-phone-alt"></i> 11 3492-2938 | 11 99384-3849</p>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <h6> Dias e horários de funcionamento:</h6>
+               <p><strong>Segunda</strong> 9:00 - 23:00<br>
+				<strong>Terça a Quinta</strong> 8:00 - 23:00<br>
+				<strong>Sexta e Sábado</strong> 9:00 - 02:00<br>
+				<strong>Domingo</strong> 10:00 - 23:00</p>
+               <a href=faleconosco.html class="btn-footer"> Fale conosco </a><br>
+               <a href="#" class="btn-footer"> Reservas</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6">
+               <h6> Suporte</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href=index.html> Home</a> </li>
+                        <li> <a href=index.html> Sobre nós</a> </li>
+                        <li> <a href="#"> Política de privacidade</a> </li>
+                        
+                     </ul>
+                  </div>
+                  <div class="col-md-6 ">
+                     <ul>
+                       <li> <a href="#"> Nosso Time</a> </li>
+                        <li> <a href="#"> FAQ</a> </li>
+                        <li> <a href="#"> Contato</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Redes Sociais</h6>
+               <div class="social">
+                  <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</footer>
+
+
+<!-- JAVASCRIPT !-->
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script> 
+AOS.init();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

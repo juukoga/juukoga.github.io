@@ -1,0 +1,355 @@
+
+/* ------------- MENU BAR ------------------ */
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img{
+	height:50% ;
+	width: 49%;
+}
+
+.navbar-nav li{
+	padding: 0 50px; /* espaço entre as palavras no menu */
+
+}
+
+.navbar-nav li a{
+	color: #00093f;
+	font-weight: bold;
+}
+
+.navbar{
+	background-color: #FFF0DC;
+	font-size: 85%;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+
+
+/* INICIO DO CONTEÚDO */
+
+.subtitulo{
+	color: white;
+	padding-left: 10%;
+}
+
+.titulo-fale{
+	width: 100%;
+	height: 100%;
+	margin-top: 3rem;
+	background-color: #00093f;
+
+}
+
+.mx-auto{
+	display: block;
+}
+
+#textinho{
+	float: right;
+	padding-right: 20%;
+}
+.textinho-direita{ /* TITULO */
+	text-align: left;
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	color: #ac00fc;
+}
+.fa-phone-alt{
+	color: #ff0044;
+}
+
+.insta{
+	color: white;
+	font-family: Bahnscript,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.face{
+	color: white;
+	font-family: Bahnscript,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.redes{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	color: #9201f7;
+	margin-top: 3rem;
+}
+.textinho2-direita{
+	text-align: left;
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	color: white;
+	margin-top: 2rem;
+}
+
+.telefone{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 30px;
+	margin-top: 3rem;
+}
+
+.email{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+.form-row h5{
+	color: white;
+}
+
+label{
+	color: white;
+	font-family: Bahnscript,sans-serif;
+	font-weight: bold;
+}
+
+.conteudo-tudo{
+	background-color: #00093f;
+	padding-left: 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+input.form-control{
+	border: 3px solid;
+	border-color: #9201f7;
+	background-color: transparent;
+	padding: 6%;
+}
+textarea#mensagem.form-control{
+	border: 3px solid;
+	border-color: #9201f7;
+	background-color: transparent;
+}
+/* ------------ BOTÃO DE ENVIAR ----------- */
+.buttons-coll {
+  width: 90%;
+  /* margin: 50px auto; */
+  text-align: center;
+  padding-top: 5%;
+}
+button {
+  margin: 20px;
+
+}
+.custom-btn {
+  padding: 10px 25px;
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: 500;
+  float: left;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+.btn-enviar {
+  border: 2px solid #ff0044;
+  z-index: 1;
+  color: #ff0044;
+  font-weight: 400;
+}
+.btn-enviar:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #ff0044;
+  transition: all 0.3s ease;
+}
+.btn-enviar:hover {
+  color: #fff;
+  font-weight: 400;
+}
+.btn-enviar:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-enviar:active {
+  top: 2px;
+}
+
+
+/* POP UP */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #9201f7;
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: bold;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: Bahnscript, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+/* footer */
+
+   footer.container-fluid {
+        background-color: #FFF0DC;
+        padding-top: 2%;
+        padding-bottom: 2%;
+     }
+   .logo-footer {
+        margin-bottom: 10%;
+        width: 50%;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: Bahnscript, sans-serif;
+}
+footer h6 {
+    font-family: Bahnscript, sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 0;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fab {
+    color: #00093f;
+    font-size: 22px;
+    padding: 10px 15px;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #ff0044 !important;  
+}
+
+.social .fab:hover{
+	color: #ff0044 !important; 
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+
+footer strong{
+	color: #ff0044;
+}
+
+footer .fas, .far{
+	color: #ff0044;
+}

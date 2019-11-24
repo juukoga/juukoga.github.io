@@ -1,0 +1,543 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* ------------- MENU BAR ------------------ */
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+
+
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img{
+	height:50% ;
+	width: 49%;
+}
+
+.navbar-nav li{
+	padding: 0 50px; /* espaço entre as palavras no menu */
+
+}
+
+.navbar-nav li a{
+	color: #ff0044;
+	font-weight: 600;
+}
+
+.navbar{
+	background-color: #FFF0DC;
+	font-size: 85%;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+
+.nav-item{
+  width: 241px;
+}
+
+
+/* -----------LANDING PAGE ----------------- */
+
+#banner{
+	background-color: #00093f;
+	color: #fff;
+	padding-top: 10%;
+	height: 624px;
+} 
+
+.titulo{
+	color: #ffff;
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-size: 30px;
+	font-stretch: semi-condensed;
+	font-weight: 600;
+	margin-top: 100px;
+}
+.texto{
+	color: #FFF0DC;
+	font-family: Bahnscripft, sans-serif;
+}
+strong{
+	color: #ff0044;
+}
+
+
+@media screen and (max-width:900px){
+  .oi{
+    display:none;
+  }
+}
+
+
+.coffee{
+	width: 140%;
+	position:absolute;
+		left:-30%;
+		top:-30%;
+}
+.palavra1{ /*café quentinho */
+	width: 85%;
+	position: absolute;
+		bottom: 8%;
+}
+
+.palavra2{
+	width: 75%;
+	position: absolute;
+		left: 68%;
+		top: 6%;
+}
+
+
+/* .coffee{
+  width: 140%;
+  position:absolute;
+    left:-30%;
+    top:-30%;
+}
+.palavra1{ /*café quentinho 
+  width: 85%;
+  position: absolute;
+    bottom: 8%;
+}
+
+.palavra2{
+  width: 75%;
+  position: absolute;
+    left: 68%;
+    top: 6%;
+
+
+} */
+
+.btn-quemsomos {
+  border: 2px solid #ff0044;
+  z-index: 1;
+  color: #ff0044;
+  font-weight: 400;
+  float: left;
+}
+.btn-quemsomos:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #ff0044;
+  transition: all 0.3s ease;
+}
+.btn-quemsomos:hover {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn-quemsomos:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-quemsomos:active {
+  top: 2px;
+}
+
+/* -------------------- SESSÕES ------------------- */
+
+#sessoes{
+	padding: 80px 0; 
+	background-color: #fff0dc;
+}
+
+.titulo-sessoes-principal{
+	color: #ff0044;
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-weight: 600;
+	padding-left: 4%;
+	padding-bottom: 4%;
+}
+
+.sessoes-img{
+	width: 90%;
+	margin-top: 20px;
+}
+
+.sessoes-comidas{
+	width: 50%;
+
+}
+.sessoes-bebidas{
+	width: 50%;
+}
+
+.sessoes-lounge{
+	width: 84%;
+}
+
+
+#sessoes p{
+	font-family: Bahnscripft, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.container{
+	color: #00093f;
+	font-family: Bahnscript, sans-serif;
+}
+
+
+/* ------------ BOTÕES ----------- */
+.buttons-coll {
+  width: 90%;
+  /* margin: 50px auto; */
+  text-align: center;
+  padding-top: 5%;
+}
+.buttons-coll a{
+  margin: 20px;
+
+}
+.custom-btn {
+  padding: 10px 25px;
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-bebidas {
+  border: 2px solid #00f2f2;
+  z-index: 1;
+  color: #00f2f2;
+  font-weight: 400;
+}
+.btn-bebidas:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #00f2f2;
+  transition: all 0.3s ease;
+}
+.btn-bebidas:hover {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn-bebidas:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-bebidas:active {
+  top: 2px;
+}
+
+
+
+
+.btn-comidas {
+  border: 2px solid #9201f7;
+  z-index: 1;
+  color: #9201f7;
+  font-weight: 400;
+}
+.btn-comidas:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #9201f7;
+  transition: all 0.3s ease;
+}
+.btn-comidas:hover {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn-comidas:hover:after {
+  top: 0;
+  height: 100%;
+  text-decoration: none;
+}
+.btn-comidas:active {
+  top: 2px;
+}
+
+
+
+.btn-lounge {
+  border: 2px solid #f20544;
+  z-index: 1;
+  color: #f20544;
+  font-weight: 400;
+}
+.btn-lounge:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #f20544;
+  transition: all 0.3s ease;
+}
+.btn-lounge:hover {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn-lounge:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-lounge:active {
+  top: 2px;
+}
+
+
+
+
+
+
+
+
+
+/* -------------- QUEM SOMOS NÓS -------------- */
+
+.titulo-quem{
+  color: #ac00fc;
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-right: 5%;
+  text-align: left;
+
+
+
+}
+
+
+#historia{
+  background-color: #fff0dc;
+  width: 100%;
+
+}
+
+#historia p{
+  color: #00093f;
+  font-family: Bahnscript,sans-serif;
+  font-weight: bold;
+}
+
+.foto1{
+  width: 60%;
+  padding-top: 8%;
+  margin-left: 25%;
+}
+.foto2{
+  width: 60%;
+  position: relative;
+  margin-top: 4%;
+  margin-left: 25%;
+}
+
+/* GAME LOUNGE */
+
+#game-lounge {
+  background-color: #fff0dc;
+  font-family: Bahnscript, sans-serif;
+  padding-top: 4%;
+}
+
+
+.titulo-game h2{
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: 600;
+  color: #00023e;
+ /* float: right; */
+}
+
+#game-lounge h5{
+  color: #00023e;
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-weight: 600;
+}
+
+#game-lounge p{
+  color: #00023e;
+  font-family: Bahnscript,sans-serif;
+}
+
+.titulo-game p{
+  color: #00023e;
+  font-family: Bahnscript, sans-serif;
+  font-weight: bold;
+/*  float: right;
+  text-align: right;*/
+
+}
+
+#icones{
+  width: 100%;
+}
+
+#icones p{
+  font-size: 15px;
+}
+
+#maquina{
+  width: 10%;
+  height: 10%;
+}
+
+#bilhar{
+  width: 10%;
+  height: 10%;
+}
+
+#console{
+  width: 10%;
+  height: 10%;
+}
+
+p.tit-maq, .tit-cons, .tit-sin{
+  font-family: Bahnscript, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* ------------ FOOTER --------------*/
+
+ footer.container-fluid {
+        background-color: #00093f;
+        padding-top: 2%;
+        padding-bottom: 2%;
+     }
+   .logo-footer {
+        margin-bottom: 10%;
+        width: 50%;
+     }
+     footer {
+            color: #fff0dc;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: Bahnscript, sans-serif;
+}
+footer h6 {
+    font-family: Bahnscript, sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: #fff0dc;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: #fff0dc;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 0;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+
+ .form-footer input[type="button"] {
+    border: none;
+    background:#fff0dc;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fab {
+    color: #fff0dc;
+    font-size: 22px;
+    padding: 10px 15px;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: #fff0dc;
+  text-decoration:none;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #ff0044 !important;  
+}
+
+.social .fab:hover{
+  color: #ff0044 !important; 
+}
+.logo-part {
+    border-right: 1px solid #fff0dc;
+    height: 100%;
+    }
+
+footer strong{
+  color: #ff0044;
+}
+
+footer .fas, .far{
+  color: #ff0044;
+}
+

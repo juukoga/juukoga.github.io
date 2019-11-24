@@ -1,0 +1,386 @@
+body{
+  height: 100%;
+  margin: 0;
+}
+
+html{
+	height: 100%;
+	margin:0;
+}
+/* ------------- MENU BAR ------------------ */
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #9201f7;
+  font-family: Franklin Gothic Medium , sans-serif;
+  font-weight: bold;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: Bahnscript, sans-serif;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+
+
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img{
+	height:50% ;
+	width: 49%;
+}
+
+.navbar-nav li{
+	padding: 0 50px; /* espaço entre as palavras no menu */
+
+}
+
+.navbar-nav li a{
+	color: #ff0044;
+	font-weight: 600;
+}
+
+.navbar{
+	background-color: #FFF0DC;
+	font-size: 85%;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+
+.nav-item{
+  width: 241px;
+}
+
+
+.tudo{
+	margin-top: 2rem;
+}
+
+
+
+
+
+/* CARDAPIO */
+
+#cardapio{
+	padding-top: 2%;
+	background-color: #00023e;
+}
+
+.text-titulo{
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-weight: bold;
+	color: #ffff;
+}
+
+/* CAROUSEL */
+.carousel-caption h1{
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-weight: bold;
+	font-size: 90px;
+	color: #FFF0DC;
+}
+
+/* ------- ACCORDION ------------- */
+
+#accordionEx1{
+	padding-left: 6%;
+	padding-right: 4%;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	background-color: #00023e;
+}
+
+
+/* comidas */
+div#headingTwo1.card-header{
+  background-color: #00023e;
+}
+
+.tit-comidas{
+	color: #ffff;
+}
+
+.body-tit-com{
+	color: #9201f7;
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.body-tex-com{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+	padding-bottom: 5%;
+}
+
+.linha{
+	padding-bottom: 8%;
+	padding-top: 2%;
+}
+
+.preço{
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-weight: bold;
+}
+
+.texto{
+	font-family: Bahnscript, sans-serif;
+}
+
+.legendinha{
+	font-size: 10px;
+
+}
+
+
+/* bebidas */
+div#headingTwo2.card-header{
+	background-color: #00023e;
+}
+.tit-bebidas{
+	color: #ffff;
+}
+
+.body-tit-beb{
+	color: #28dbdb;
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.body-tex-beb{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+}
+
+#cold-brew{
+	padding-bottom: 8%;
+	padding-top: 5%;
+}
+/* combos */
+
+div#headingThree31.card-header{
+	background-color: #00023e;
+}
+.tit-combos{
+	color: #ffff;
+}
+
+.body-tit-cb{
+	color: #ff0044;
+	font-family: Franklin Gothic Medium, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.body-tex-cb{
+	font-family: Bahnscript, sans-serif;
+	font-weight: bold;
+}
+
+
+
+
+div.card-header{
+	border-radius: 0px;
+	border: 2px solid;
+	border-color: #ffff;
+}
+
+.card-header a:hover{
+  text-decoration: none;
+}
+
+.card-body{
+	background-color: #e7e7e7;
+}
+
+
+.fa-leaf{
+	color: #00ce1b;
+}
+
+.fa-fire{
+	color: #e60026;
+}
+
+.fa-snowflake{
+	color: #217ff1;
+}
+
+/* ------------ FOOTER --------------*/
+
+ footer.container-fluid {
+        background-color: #FFF0DC;
+        padding-top: 2%;
+        padding-bottom: 2%;
+     }
+   .logo-footer {
+        margin-bottom: 10%;
+        width: 50%;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: Bahnscript, sans-serif;
+}
+footer h6 {
+    font-family: Bahnscript, sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 0;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fab {
+    color: #00093f;
+    font-size: 22px;
+    padding: 10px 15px;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #ff0044 !important;  
+}
+
+.social .fab:hover{
+	color: #ff0044 !important; 
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+
+footer strong{
+	color: #ff0044;
+}
+
+footer .fas, .far{
+	color: #ff0044;
+}
