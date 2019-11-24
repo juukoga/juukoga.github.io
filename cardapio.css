@@ -147,6 +147,11 @@ html{
 }
 
 /* CAROUSEL */
+@media screen and (max-width:900px){
+	.carousel-caption h1{
+		font-size: 25px;
+	}
+}
 .carousel-caption h1{
 	font-family: Franklin Gothic Medium, sans-serif;
 	font-weight: bold;
