@@ -147,11 +147,7 @@ html{
 }
 
 /* CAROUSEL */
-@media screen and (max-width:900px){
-	.carousel-caption h1{
-		font-size: 25px;
-	}
-}
+
 .carousel-caption h1{
 	font-family: Franklin Gothic Medium, sans-serif;
 	font-weight: bold;
@@ -194,14 +190,38 @@ div#headingTwo1.card-header{
 	padding-bottom: 5%;
 }
 
+
 @media screen and (max-width:900px){
   .body-tit-com{
   	font-size: 20px;
 	}
+
+	.body-tit-beb{
+	font-size: 20px;
+	}
+	.body-tex-beb{
+		font-size: 10px;
+	}
   #legenda{
   	font-size: 10px;
   }
+  #legenda-beb{
+  	font-size: 10px;
+  }
+  .linha{
+  	width: 50%;
+  }
+  .texto{
+  	font-size: 10px;
+  }
+  .carousel{
+  	margin-top: 7rem;
+  }
+  .carousel-caption h1{
+  	font-size: 40px;
+  }
 }
+
 
 .linha{
 	padding-bottom: 8%;
